@@ -1,4 +1,4 @@
-# Selekcija-Pastrmke
+# SelekcijaPastrmke
 
 Aplikacija je namenjena Poljoprivrednom fakultetu Univeryiteta u Beogradu.
 
