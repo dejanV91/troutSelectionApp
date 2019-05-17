@@ -1,13 +1,18 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import net.proteanit.sql.*;
 
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableStringConverter;
 
 import net.proteanit.sql.DbUtils;
 
 public class TableSet {
+	
+	protected static DefaultTableModel dm;
+	
 	protected static String tagFish = ScanFish.tag;
 	protected static String unit = null;
 	protected static String mother = null;
@@ -62,10 +67,14 @@ public class TableSet {
 
 			ResultSet res = prp.executeQuery();
 			Gui.table.setModel(DbUtils.resultSetToTableModel(res));
+		
 
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, e);
 		}
+
 	}
+	
+	
 
 }

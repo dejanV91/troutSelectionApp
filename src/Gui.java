@@ -2,6 +2,11 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
+
+import net.proteanit.sql.DbUtils;
+
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -13,6 +18,8 @@ import java.awt.Font;
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import java.awt.Color;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class Gui {
 
@@ -42,7 +49,9 @@ public class Gui {
 	protected static JLabel familyField;
 	protected static JLabel weightField;
 	protected static JLabel lengthField;
+	
 	protected static JTable table;
+	protected static JTextField searchTable;
 	
 	
 
@@ -137,6 +146,7 @@ public class Gui {
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				textField.setText("");
+				searchTable.setText("");
 				
 			}
 		});
@@ -159,6 +169,23 @@ public class Gui {
 		rangTagField.setForeground(Color.RED);
 		rangTagField.setBounds(111, 374, 153, 22);
 		frame.getContentPane().add(rangTagField);
+		
+		searchTable = new JTextField();
+		searchTable.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyReleased(KeyEvent e) {
+				SearchFilter.filter();
+				
+			}
+		});
+		searchTable.setFont(new Font("Tahoma", Font.BOLD, 13));
+		searchTable.setColumns(30);
+		searchTable.setBounds(604, 11, 190, 33);
+		frame.getContentPane().add(searchTable);
+		
+		JLabel lblSearch = new JLabel("Search:");
+		lblSearch.setBounds(546, 14, 97, 30);
+		frame.getContentPane().add(lblSearch);
 		
 		
 	}
