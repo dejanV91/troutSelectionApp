@@ -1,6 +1,6 @@
 # SelekcijaPastrmke
 
-Aplikacija je namenjena Poljoprivrednom fakultetu Univeryiteta u Beogradu.
+Aplikacija je namenjena Poljoprivrednom fakultetu Univerziteta u Beogradu.
 
 Korisnik upisuje broj cipa sa skenirane ribe i aplikacija ispisuje sve podatke o skeniraoj ribi:
 -id
