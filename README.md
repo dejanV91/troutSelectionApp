@@ -1,15 +1,16 @@
-# SelekcijaPastrmke
+# Trout Selection
 
-Aplikacija je namenjena Poljoprivrednom fakultetu Univerziteta u Beogradu.
+### The application is intended for the Faculty of Agriculture, University of Belgrade.
 
-Korisnik upisuje broj cipa sa skenirane ribe i aplikacija ispisuje sve podatke o skeniraoj ribi:
--id
--scan id
--broj tanka u koji je gajena
--broj familije
--tezina 
--duzina
--i pozicija prosecne tezine u tanku kome pripada u odnosu na ostale tankove
+The user enters the number of chips from the scanned fish and the application prints all the data about the scanned fish:
 
-kao i :
--tabelu sa svim jedinkama sa kojim moze skenirana riba da da potomstvo a da nisu u srodstvu odredjeno na osnovu pedigrea koji ima svaka riba
+- id
+- scan id
+- the number of the tank in which it was grown
+- family number
+- Weight
+- length
+- and the position of the average weight in the tank to which it belongs in relation to other tanks
+
+as well as :
+- a table with all the individuals with which the scanned fish can give offspring without being related is determined on the basis of the pedigree that each fish has.
