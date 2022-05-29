@@ -1,5 +1,6 @@
 # Trout Selection
-The application is intended for the Faculty of Agriculture, University of Belgrade.
+
+###The application is intended for the Faculty of Agriculture, University of Belgrade.
 
 The user enters the number of chips from the scanned fish and the application prints all the data about the scanned fish:
 
